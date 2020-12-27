@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders a task correctly 1`] = `
+<div
+  className="app-column"
+>
+  <div
+    className="header task-header"
+  >
+    <input
+      className="title-input"
+      onChange={[Function]}
+      type="text"
+    />
+    <button
+      className="button button-large button-complete"
+      onClick={[Function]}
+    >
+      Complete
+    </button>
+     
+    <button
+      className="button button-large button-delete"
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+     
+  </div>
+  <div
+    className="task-body"
+  >
+    <textarea
+      className="body-text"
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;

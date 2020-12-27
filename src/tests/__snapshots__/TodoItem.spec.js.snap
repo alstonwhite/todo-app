@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders a list correctly (completed status) 1`] = `
+<li>
+  <button
+    className="button task-button"
+    onClick={[Function]}
+  />
+  <button
+    className="button button-small button-complete"
+  >
+    ✔
+  </button>
+</li>
+`;
+
+exports[`Renders a list correctly (new status) 1`] = `
+<li>
+  <button
+    className="button task-button"
+    onClick={[Function]}
+  />
+  <button
+    className="button button-small button-complete"
+  >
+    ✔
+  </button>
+</li>
+`;
+
+exports[`renders correctly 1`] = `
+<li>
+  <button
+    className="button task-button"
+    onClick={[Function]}
+  />
+  <button
+    className="button button-small button-complete"
+  >
+    ✔
+  </button>
+</li>
+`;
+
+exports[`renders correctly 2`] = `
+<li>
+  <button
+    className="button task-button"
+    onClick={[Function]}
+  />
+  <button
+    className="button button-small button-complete"
+  >
+    ✔
+  </button>
+</li>
+`;

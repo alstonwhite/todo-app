@@ -1,0 +1,94 @@
+// test
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+  <style></style>
+
+  <script type="text/babel">
+
+    const newTask = (key) => {return {
+        id: key,
+        value: 'New task...',
+        status: 'new',
+        body: 'Add notes...'
+        }};
+
+    function App () {
+        const [items, setItems] = React.useState([newTask(0)]);
+        const [activeItem, setActiveItem] = React.useState(items[0]);
+        function addTask () {
+            let nextId = items.length ? items[items.length-1].id + 1 : 0;
+            setItems([...items, newTask(nextId)]);
+        }
+        function removeTask (id) {
+            setItems(items.filter(i => i.id !== id))
+        }
+        function activateTask (item) {
+            //item.status = 'active';
+            setActiveItem(item);
+        }
+        function completeTask (item) {
+            item.status = 'completed';
+            ///....
+            setItems(copyofItems);
+        }
+
+        return (
+                <h1>To-Do List</h1>
+                <ul style={{listStyle: 'none', paddingLeft: 0}}>
+                {items.map(item => (
+
+                    <TodoItem item={item} onComplete={completeTask}/>
+
+                    <!--<li key = {item.id}>
+                        <button onClick={() => completeTask(item)}>Complete</button>{' '}
+                        <button onClick={() => removeTask(item.id)}>Remove</button>{' '}
+                        <input type = 'text' placeholder = {item.value} onChange={() => activateTask(item)}/>
+                        <input type = 'text' placeholder = {item.body} onChange={() => activateTask(item)}/>
+                    </li>-->
+                ))}
+                </ul>
+                <button onClick={() => addTask()}>Add Task</button>{' '}
+                
+                
+                <div className="app-column"></div>
+                    <div className="app-header header">
+                        <span>To-Do App</span>
+                        <button onClick={() => addTask()}>Add Task</button>{' '}
+                        </div>
+                    <div className="task-list"></div>
+
+                <TodoDetail item={activeItem} onDelete={removeTask}/> 
+                
+                <!--
+                <div className="app-column"></div>
+                    <div className="task-header header">{activeItem ? activeItem.value : ''}</div>
+                    <div className="task-body">{activeItem ? activeItem.body : ''}</div>
+                </div>
+                -->
+
+
+        )
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'))
+  </script>
+</body>
+
+
+// file TodoItem.js
+
+const TodoItem = ({item, onComplete}) => {
+    return <li key = {item.id}>
+        <button onClick={() => onComplete(item)}>Complete</button>{' '}
+        <button onClick={() => removeTask(item.id)}>Remove</button>{' '}
+        <input type = 'text' placeholder = {item.value} onChange={() => activateTask(item)}/>
+        <input type = 'text' placeholder = {item.body} onChange={() => activateTask(item)}/>
+    </li>
+}
+
+
+// file TodoDetail.js
+

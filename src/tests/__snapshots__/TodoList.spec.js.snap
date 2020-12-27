@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders a list correctly (multiple items) 1`] = `
+<div
+  className="app-column"
+>
+  <div
+    className="header app-header"
+  >
+    <div
+      className="app-title"
+    >
+      To-Do App
+    </div>
+    <button
+      className="button button-medium button-add"
+      onClick={[Function]}
+      value="Add"
+    >
+      Add
+    </button>
+  </div>
+  <div
+    className="task-list"
+  >
+    <ul>
+      <li>
+        <button
+          className="button task-button"
+          onClick={[Function]}
+        >
+          New task...
+        </button>
+        <button
+          className="button button-small button-delete"
+          onClick={[Function]}
+        >
+          X
+        </button>
+      </li>
+      <li>
+        <button
+          className="button task-button"
+          onClick={[Function]}
+        >
+          New task...
+        </button>
+        <button
+          className="button button-small button-delete"
+          onClick={[Function]}
+        >
+          X
+        </button>
+      </li>
+      <li>
+        <button
+          className="button task-button"
+          onClick={[Function]}
+        >
+          New task...
+        </button>
+        <button
+          className="button button-small button-delete"
+          onClick={[Function]}
+        >
+          X
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Renders a list correctly (no items) 1`] = `
+<div
+  className="app-column"
+>
+  <div
+    className="header app-header"
+  >
+    <div
+      className="app-title"
+    >
+      To-Do App
+    </div>
+    <button
+      className="button button-medium button-add"
+      onClick={[Function]}
+      value="Add"
+    >
+      Add
+    </button>
+  </div>
+  <div
+    className="task-list"
+  >
+    <ul />
+  </div>
+</div>
+`;
+
+exports[`Renders a list correctly (single item) 1`] = `
+<div
+  className="app-column"
+>
+  <div
+    className="header app-header"
+  >
+    <div
+      className="app-title"
+    >
+      To-Do App
+    </div>
+    <button
+      className="button button-medium button-add"
+      onClick={[Function]}
+      value="Add"
+    >
+      Add
+    </button>
+  </div>
+  <div
+    className="task-list"
+  >
+    <ul>
+      <li>
+        <button
+          className="button task-button"
+          onClick={[Function]}
+        >
+          New task...
+        </button>
+        <button
+          className="button button-small button-delete"
+          onClick={[Function]}
+        >
+          X
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly (nmultiple items) 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="app-column"
+  >
+    <div
+      className="header app-header"
+    >
+      <div
+        className="app-title"
+      >
+        To-Do App
+      </div>
+      <button
+        className="button button-medium button-add"
+        onClick={[Function]}
+        value="Add"
+      >
+        Add
+      </button>
+    </div>
+    <div
+      className="task-list"
+    >
+      <ul />
+    </div>
+  </div>
+  <div
+    className="app-column"
+  >
+    <div
+      className="header task-header"
+    >
+      <input
+        className="title-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <button
+        className="button button-large button-complete"
+        onClick={[Function]}
+      >
+        Complete
+      </button>
+       
+      <button
+        className="button button-large button-delete"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+       
+    </div>
+    <div
+      className="task-body"
+    >
+      <textarea
+        className="body-text"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Renders correctly (no items) 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="app-column"
+  >
+    <div
+      className="header app-header"
+    >
+      <div
+        className="app-title"
+      >
+        To-Do App
+      </div>
+      <button
+        className="button button-medium button-add"
+        onClick={[Function]}
+        value="Add"
+      >
+        Add
+      </button>
+    </div>
+    <div
+      className="task-list"
+    >
+      <ul />
+    </div>
+  </div>
+  <div
+    className="app-column"
+  >
+    <div
+      className="header task-header"
+    >
+      <input
+        className="title-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <button
+        className="button button-large button-complete"
+        onClick={[Function]}
+      >
+        Complete
+      </button>
+       
+      <button
+        className="button button-large button-delete"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+       
+    </div>
+    <div
+      className="task-body"
+    >
+      <textarea
+        className="body-text"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
